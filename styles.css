@@ -1,0 +1,281 @@
+/* The entire site's background color will be olive green using the font family Outfit. */
+body {
+    background-color: #656D3F;
+    font-family: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Headers by default will be centered. */
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Logo will be on the top left and slightly tilted. */
+.avocado-logo {
+    position: fixed;
+    top: 1.5rem;
+    left: 1rem;
+    z-index: 1000;
+    transform: rotate(15deg);
+}
+.avocado-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Navigation bar actions/appearance. */
+nav {
+    display: inline-flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: #492828;
+    border: 1.5px solid #ECECEC; 
+    border-radius: 999px;
+    margin: 0.4rem auto;
+}
+nav a {
+    text-decoration: none;
+    color: #ECECEC;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+nav a:hover {
+    background-color: transparent;
+    border: 1.5px solid white;
+    color: white;
+}
+nav a.active {
+    background-color: white;
+    color: #492828;
+}
+
+/* Home page's background will have a light green grid pattern to separate it from the other pages. */
+.home-body {
+    background-image:
+        linear-gradient(to right,  #84934A 3px, transparent 1px),
+        linear-gradient(to bottom, #84934A 3px, transparent 1px);
+    background-size: 65px 65px;
+}
+.home-content {
+    text-align: center;
+    margin-top: 9rem; 
+    color: #ECECEC;
+}
+.home-content h1 {
+    margin-bottom: 0.5rem;
+    font-size: 7rem;
+}
+.home-content p {
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.home-content .buttons {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    }
+.aboutmebutton, .resumebutton {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #ECECEC;
+    background-color: #492828;
+    transition: background-color 0.2s;
+    border: 1.5px solid #ECECEC; 
+    border-radius: 999px;
+}
+
+/* Resume pdf should be fully visible on page, with the last updated date clearly labeled. */
+.resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    color: #ECECEC;
+}
+.resume-content h1 {
+    margin-bottom: 0.3rem;
+    font-size: 3rem;
+}
+.resume-content p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+/* Contact form should be centered with a clear submit button. */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    color: #ECECEC;
+}
+.contact-content h1 {
+    margin-bottom: 0.3rem;
+    font-size: 3rem;
+}
+.contact-content p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+.contact-content .container input,
+.contact-content .container textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.contact-content .container .submit-button {
+    background-color: #492828;
+    color: #ECECEC;
+    border: 1.5px solid #ECECEC; 
+    border-radius: 999px;
+}
+.contact-content .container .submit-button:hover {
+    background-color: white;
+    color: #492828;
+}
+
+/* Thank you page should be simple; links back to home in case user wants to continue exploring portfolio. */
+.thankyou-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    color: #ECECEC;
+}
+.thankyou-content p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+/* Image and overview details should be on the left, with paragraph descriptions on the right. */
+.about-content {
+    color: #ECECEC;
+    margin-top: 2rem;
+    text-align: center;
+}
+.about-layout {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+.about-header {
+    color: #ECECEC;
+    flex: 1;
+    text-align: center;
+    font-size: 3rem;
+}
+.about-left {
+    color: #ECECEC;
+    flex: 1;
+    text-align: center;
+}
+.about-left img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+}
+.about-left h2 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.about-left p {
+    margin: 0;
+    font-size: 1rem;
+}
+.about-right {
+    color: #ECECEC;
+    flex: 2;
+    text-align: left;
+}
+.about-right p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 0.25rem;
+}
+.about-header2 {
+    margin-top: 2rem;
+}
+
+/* Each project should be separated by a box w/ adequate padding for visibility. */
+.projects-header {
+    color: #ECECEC;
+    flex: 1;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.projects-content {
+    color: #ECECEC;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.projects-1 img {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 2rem auto;
+    margin-top: 2rem;
+}
+.projects-1header {
+    color:#ECECEC;
+    text-align: center;
+}
+.projects-1 {
+    color: #ECECEC;
+    margin-top: 0.5rem;
+    margin-right: 25rem;
+    margin-left: 25rem;
+    text-align: left;
+    background-color: #492828;
+    padding: 2rem;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    max-width: 1200px;
+}
+.projects-2 img {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 2rem auto;
+    margin-top: 2rem;
+}
+.projects-2header {
+    color: #ECECEC;
+    text-align: center;
+}
+.projects-2 {
+    color: #ECECEC;
+    margin-top: 3rem;
+    margin-right: 25rem;
+    margin-left: 25rem;
+    text-align: left;
+    background-color: #492828;
+    padding: 2rem;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    max-width: 1200px;
+}

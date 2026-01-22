@@ -2,23 +2,45 @@
 <html lang="en">
 
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: Mandy Woo
+EMAIL: mwoo5@uci.edu
 -->
 
-<head>
-  <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
-</head>
-<body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Mandy Woo">
+        <meta name="description" content="A comprehensive portfolio of the projects completed by Mandy Woo throughout her undergraduate career."> 
+            <!-- Site uses the Outfit font family from Google fonts. -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="styles.css">
+        <title>Mandy Woo's Portfolio</title>
+    </head>
+    <body class="home-body">
+        <header>
+            <!-- Clicking on avocado logo in left corner will return to Home page. -->
+            <a href="index.html" class="avocado-logo">
+              <img src="avocado.png" alt="Mandy Woo's Avocado Logo">
+            </a>
+            <!-- Each page will be highlighted on the navigation bar if user is currently on that page. -->
+            <nav>
+              <a class="active" href="index.html">Home</a>
+              <a href="aboutme.html">About</a>
+              <a href="resume.html">Resume</a>
+              <a href="projects.html">Projects</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main class="home-content">
+            <h1>Hi there! I'm Mandy</h1>
+            <p>Health Informatics Specialist @ UC Irvine</p>
+            <!-- Buttons link to important pages also present on the navigation bar. -->
+            <div class="buttons">
+                <a href="aboutme.html" class="aboutmebutton">About Me</a>
+                <a href="resume.html" class="resumebutton">My Resume</a>
+            </div>
+        </main>
+    </body>
 </html>

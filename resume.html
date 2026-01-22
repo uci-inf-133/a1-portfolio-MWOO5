@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A page storing Mandy Woo's resume."> 
+            <!-- Site uses the Outfit font family from Google fonts. -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href=“https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css” integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+        <title>My Resume</title>
+    </head>
+    <body>
+        <header>
+            <!-- Clicking on avocado logo in left corner will return to Home page. -->
+            <a href="index.html" class="avocado-logo">
+                <img src="avocado.png" alt="Mandy Woo's Avocado Logo">
+            </a>
+            <!-- Each page will be highlighted on the navigation bar if user is currently on that page. -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About</a>
+                <a class="active" href="resume.html">Resume</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main class="resume-content">
+            <h1>My Resume</h1>
+            <p>Last updated Dec 29, 2025!</p>
+            <!-- Links to external pdf of resume, with the toolbar removed. No download supported (personal reasons). -->
+            <embed src="Mandy_Woo___TECHNICAL_RESUME__copy.pdf#toolbar=0" type="application/pdf" width="712" height="915" class="resume-pdf"></embed>
+            <!-- In case the person viewing my page's browser does not support embedded PDFs. -->
+            <noembed>
+                <p>
+                Your browser does not support embedded PDFs.
+                <a href="Mandy_Woo___TECHNICAL_RESUME__copy.pdf" download>
+                    Download my resume instead.
+                </a>
+                </p>
+            </noembed>
+        </main>
+    </body>
+</html>
